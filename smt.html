@@ -1,35 +1,57 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Page</title>
-<style>
-   
-    #f{
-        border:5px solid black;
-        text-align: center;
-        width:300px;
-        height:500px;
-        margin: auto;
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Page</title>
+  <style>
+    /* Center the container on the page and make it a flex box so its children
+       (the heading and the links) are centered both horizontally and vertically */
+    #f {
+      border: 5px solid black;
+      width: 300px;
+      height: 500px;
+      margin: 50px auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+      text-align: center;
     }
-    #q{border: 2px solid black;
-    padding: 6px 12px;
-    display: inline-block; 
-    text-decoration: none;
-        margin: auto;
-          margin-top: 210px;
-      
+
+    /* Small box for the links — center and space the links vertically */
+    #q {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: center;
     }
-</style>
+
+    /* Make the links a bit nicer (optional) */
+    #q a {
+      text-decoration: none;
+      padding: 6px 12px;
+      border: 2px solid #000;
+      border-radius: 4px;
+      color: inherit;
+      background: #fff;
+    }
+
+    #q a:hover {
+      background: #f0f0f0;
+    }
+  </style>
 </head>
 <body>
-    
-    <div id="f">
-        <h1>Main Web Page</h1>
-        <div id="q">
-    <a href="Reg.html" >Registration</a><br><br>
-    <a href="login.html">Login</a>
+  <div id="f">
+    <h1>Main Web Page</h1>
+
+    <div id="q">
+      <a href="Reg.html">Registration</a>
+      <a href="login.html">Login</a>
     </div>
-    </div>
-    </body>
+  </div>
 </body>
 </html>
 
